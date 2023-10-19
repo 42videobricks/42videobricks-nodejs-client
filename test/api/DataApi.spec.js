@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.42videobricks);
+    factory(root.expect, root.Api42Vb);
   }
-}(this, function(expect, 42videobricks) {
+}(this, function(expect, Api42Vb) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new 42videobricks.DataApi();
+    instance = new Api42Vb.DataApi();
   });
 
   var getProperty = function(object, getter, property) {

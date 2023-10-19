@@ -2,7 +2,7 @@
   "name": "42videobricks",
   "version": "1.1",
   "description": "42videobricks is a Video Platform As A Service (VPaaS)",
-  "license": "Unlicense",
+  "license": "MIT",
   "main": "dist/index.js",
   "scripts": {
     "build": "babel src -d dist",

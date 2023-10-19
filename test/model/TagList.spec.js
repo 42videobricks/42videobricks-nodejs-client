@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new Api42Vb.VideoMultipartUploadInitResponsePartsInner();
+    instance = new Api42Vb.TagList();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,22 +47,34 @@
       object[property] = value;
   }
 
-  describe('VideoMultipartUploadInitResponsePartsInner', function() {
-    it('should create an instance of VideoMultipartUploadInitResponsePartsInner', function() {
-      // uncomment below and update the code to test VideoMultipartUploadInitResponsePartsInner
-      //var instance = new Api42Vb.VideoMultipartUploadInitResponsePartsInner();
-      //expect(instance).to.be.a(Api42Vb.VideoMultipartUploadInitResponsePartsInner);
+  describe('TagList', function() {
+    it('should create an instance of TagList', function() {
+      // uncomment below and update the code to test TagList
+      //var instance = new Api42Vb.TagList();
+      //expect(instance).to.be.a(Api42Vb.TagList);
     });
 
-    it('should have the property signedUrl (base name: "signedUrl")', function() {
-      // uncomment below and update the code to test the property signedUrl
-      //var instance = new Api42Vb.VideoMultipartUploadInitResponsePartsInner();
+    it('should have the property offset (base name: "offset")', function() {
+      // uncomment below and update the code to test the property offset
+      //var instance = new Api42Vb.TagList();
       //expect(instance).to.be();
     });
 
-    it('should have the property partNumber (base name: "PartNumber")', function() {
-      // uncomment below and update the code to test the property partNumber
-      //var instance = new Api42Vb.VideoMultipartUploadInitResponsePartsInner();
+    it('should have the property limit (base name: "limit")', function() {
+      // uncomment below and update the code to test the property limit
+      //var instance = new Api42Vb.TagList();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property total (base name: "total")', function() {
+      // uncomment below and update the code to test the property total
+      //var instance = new Api42Vb.TagList();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property data (base name: "data")', function() {
+      // uncomment below and update the code to test the property data
+      //var instance = new Api42Vb.TagList();
       //expect(instance).to.be();
     });
 

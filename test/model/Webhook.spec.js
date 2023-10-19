@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.42videobricks);
+    factory(root.expect, root.Api42Vb);
   }
-}(this, function(expect, 42videobricks) {
+}(this, function(expect, Api42Vb) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new 42videobricks.Webhook();
+    instance = new Api42Vb.Webhook();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,43 +50,43 @@
   describe('Webhook', function() {
     it('should create an instance of Webhook', function() {
       // uncomment below and update the code to test Webhook
-      //var instance = new 42videobricks.Webhook();
-      //expect(instance).to.be.a(42videobricks.Webhook);
+      //var instance = new Api42Vb.Webhook();
+      //expect(instance).to.be.a(Api42Vb.Webhook);
     });
 
     it('should have the property url (base name: "url")', function() {
       // uncomment below and update the code to test the property url
-      //var instance = new 42videobricks.Webhook();
+      //var instance = new Api42Vb.Webhook();
       //expect(instance).to.be();
     });
 
     it('should have the property token (base name: "token")', function() {
       // uncomment below and update the code to test the property token
-      //var instance = new 42videobricks.Webhook();
+      //var instance = new Api42Vb.Webhook();
       //expect(instance).to.be();
     });
 
     it('should have the property eventType (base name: "eventType")', function() {
       // uncomment below and update the code to test the property eventType
-      //var instance = new 42videobricks.Webhook();
+      //var instance = new Api42Vb.Webhook();
       //expect(instance).to.be();
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new 42videobricks.Webhook();
+      //var instance = new Api42Vb.Webhook();
       //expect(instance).to.be();
     });
 
     it('should have the property ctime (base name: "ctime")', function() {
       // uncomment below and update the code to test the property ctime
-      //var instance = new 42videobricks.Webhook();
+      //var instance = new Api42Vb.Webhook();
       //expect(instance).to.be();
     });
 
     it('should have the property mtime (base name: "mtime")', function() {
       // uncomment below and update the code to test the property mtime
-      //var instance = new 42videobricks.Webhook();
+      //var instance = new Api42Vb.Webhook();
       //expect(instance).to.be();
     });
 

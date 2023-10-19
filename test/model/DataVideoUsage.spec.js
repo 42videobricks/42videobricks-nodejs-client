@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.42videobricks);
+    factory(root.expect, root.Api42Vb);
   }
-}(this, function(expect, 42videobricks) {
+}(this, function(expect, Api42Vb) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new 42videobricks.DataVideoUsage();
+    instance = new Api42Vb.DataVideoUsage();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,37 +50,37 @@
   describe('DataVideoUsage', function() {
     it('should create an instance of DataVideoUsage', function() {
       // uncomment below and update the code to test DataVideoUsage
-      //var instance = new 42videobricks.DataVideoUsage();
-      //expect(instance).to.be.a(42videobricks.DataVideoUsage);
+      //var instance = new Api42Vb.DataVideoUsage();
+      //expect(instance).to.be.a(Api42Vb.DataVideoUsage);
     });
 
     it('should have the property monthId (base name: "monthId")', function() {
       // uncomment below and update the code to test the property monthId
-      //var instance = new 42videobricks.DataVideoUsage();
+      //var instance = new Api42Vb.DataVideoUsage();
       //expect(instance).to.be();
     });
 
     it('should have the property transcoding (base name: "transcoding")', function() {
       // uncomment below and update the code to test the property transcoding
-      //var instance = new 42videobricks.DataVideoUsage();
+      //var instance = new Api42Vb.DataVideoUsage();
       //expect(instance).to.be();
     });
 
     it('should have the property hosting (base name: "hosting")', function() {
       // uncomment below and update the code to test the property hosting
-      //var instance = new 42videobricks.DataVideoUsage();
+      //var instance = new Api42Vb.DataVideoUsage();
       //expect(instance).to.be();
     });
 
     it('should have the property delivery (base name: "delivery")', function() {
       // uncomment below and update the code to test the property delivery
-      //var instance = new 42videobricks.DataVideoUsage();
+      //var instance = new Api42Vb.DataVideoUsage();
       //expect(instance).to.be();
     });
 
     it('should have the property drm (base name: "drm")', function() {
       // uncomment below and update the code to test the property drm
-      //var instance = new 42videobricks.DataVideoUsage();
+      //var instance = new Api42Vb.DataVideoUsage();
       //expect(instance).to.be();
     });
 

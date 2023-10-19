@@ -1,4 +1,4 @@
-# 42videobricks.VideoAttachment
+# Api42Vb.VideoAttachment
 
 ## Properties
 

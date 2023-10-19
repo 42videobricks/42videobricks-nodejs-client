@@ -597,12 +597,12 @@ class ApiClient {
               'description': "Sandbox server (videos are watermarked and deleted after 24h)",
             },
             {
-              'url': "https://api-stg.42videobricks.com",
-              'description': "Staging server",
-            },
-            {
               'url': "https://api.42videobricks.com",
               'description': "Production server",
+            },
+            {
+              'url': "https://api-stg.42videobricks.com",
+              'description': "Staging server",
             }
       ];
     }

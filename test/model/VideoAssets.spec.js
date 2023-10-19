@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.42videobricks);
+    factory(root.expect, root.Api42Vb);
   }
-}(this, function(expect, 42videobricks) {
+}(this, function(expect, Api42Vb) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new 42videobricks.VideoAssets();
+    instance = new Api42Vb.VideoAssets();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('VideoAssets', function() {
     it('should create an instance of VideoAssets', function() {
       // uncomment below and update the code to test VideoAssets
-      //var instance = new 42videobricks.VideoAssets();
-      //expect(instance).to.be.a(42videobricks.VideoAssets);
+      //var instance = new Api42Vb.VideoAssets();
+      //expect(instance).to.be.a(Api42Vb.VideoAssets);
     });
 
     it('should have the property thumbnail (base name: "thumbnail")', function() {
       // uncomment below and update the code to test the property thumbnail
-      //var instance = new 42videobricks.VideoAssets();
+      //var instance = new Api42Vb.VideoAssets();
       //expect(instance).to.be();
     });
 
     it('should have the property player (base name: "player")', function() {
       // uncomment below and update the code to test the property player
-      //var instance = new 42videobricks.VideoAssets();
+      //var instance = new Api42Vb.VideoAssets();
       //expect(instance).to.be();
     });
 
     it('should have the property stream (base name: "stream")', function() {
       // uncomment below and update the code to test the property stream
-      //var instance = new 42videobricks.VideoAssets();
+      //var instance = new Api42Vb.VideoAssets();
       //expect(instance).to.be();
     });
 
     it('should have the property iframe (base name: "iframe")', function() {
       // uncomment below and update the code to test the property iframe
-      //var instance = new 42videobricks.VideoAssets();
+      //var instance = new Api42Vb.VideoAssets();
       //expect(instance).to.be();
     });
 

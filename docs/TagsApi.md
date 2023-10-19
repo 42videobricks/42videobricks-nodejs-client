@@ -1,20 +1,20 @@
-# Api42Vb.DataApi
+# Api42Vb.TagsApi
 
 All URIs are relative to *https://api-sbx.42videobricks.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getDataVideoUsage**](DataApi.md#getDataVideoUsage) | **GET** /data/videos/usage | List Video Usage KPIs
+[**getTags**](TagsApi.md#getTags) | **GET** /tags | List Video Tags
 
 
 
-## getDataVideoUsage
+## getTags
 
-> DataVideoUsageList getDataVideoUsage(opts)
+> TagList getTags(opts)
 
-List Video Usage KPIs
+List Video Tags
 
-Return the monthly usage of the platform ressources. For current month, usage is calculated until current time.
+Return the list of tags created and set to videos
 
 ### Example
 
@@ -27,12 +27,13 @@ api_key.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix = 'Token';
 
-let apiInstance = new Api42Vb.DataApi();
+let apiInstance = new Api42Vb.TagsApi();
 let opts = {
   'limit': 56, // Number | Number of elements to return (default=10)
-  'offset': 56 // Number | offset for pagination
+  'offset': 56, // Number | offset for pagination
+  'partial': {{partial}} // String | \\'partial\\' string to filter list
 };
-apiInstance.getDataVideoUsage(opts, (error, data, response) => {
+apiInstance.getTags(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -48,10 +49,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **limit** | **Number**| Number of elements to return (default&#x3D;10) | [optional] 
  **offset** | **Number**| offset for pagination | [optional] 
+ **partial** | **String**| \\&#39;partial\\&#39; string to filter list | [optional] 
 
 ### Return type
 
-[**DataVideoUsageList**](DataVideoUsageList.md)
+[**TagList**](TagList.md)
 
 ### Authorization
 

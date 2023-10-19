@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.42videobricks);
+    factory(root.expect, root.Api42Vb);
   }
-}(this, function(expect, 42videobricks) {
+}(this, function(expect, Api42Vb) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new 42videobricks.VideoMultipartUploadFinalize();
+    instance = new Api42Vb.VideoMultipartUploadFinalize();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('VideoMultipartUploadFinalize', function() {
     it('should create an instance of VideoMultipartUploadFinalize', function() {
       // uncomment below and update the code to test VideoMultipartUploadFinalize
-      //var instance = new 42videobricks.VideoMultipartUploadFinalize();
-      //expect(instance).to.be.a(42videobricks.VideoMultipartUploadFinalize);
+      //var instance = new Api42Vb.VideoMultipartUploadFinalize();
+      //expect(instance).to.be.a(Api42Vb.VideoMultipartUploadFinalize);
     });
 
     it('should have the property fileId (base name: "fileId")', function() {
       // uncomment below and update the code to test the property fileId
-      //var instance = new 42videobricks.VideoMultipartUploadFinalize();
+      //var instance = new Api42Vb.VideoMultipartUploadFinalize();
       //expect(instance).to.be();
     });
 
     it('should have the property fileKey (base name: "fileKey")', function() {
       // uncomment below and update the code to test the property fileKey
-      //var instance = new 42videobricks.VideoMultipartUploadFinalize();
+      //var instance = new Api42Vb.VideoMultipartUploadFinalize();
       //expect(instance).to.be();
     });
 
     it('should have the property parts (base name: "parts")', function() {
       // uncomment below and update the code to test the property parts
-      //var instance = new 42videobricks.VideoMultipartUploadFinalize();
+      //var instance = new Api42Vb.VideoMultipartUploadFinalize();
       //expect(instance).to.be();
     });
 

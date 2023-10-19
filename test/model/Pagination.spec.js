@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.42videobricks);
+    factory(root.expect, root.Api42Vb);
   }
-}(this, function(expect, 42videobricks) {
+}(this, function(expect, Api42Vb) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new 42videobricks.Pagination();
+    instance = new Api42Vb.Pagination();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('Pagination', function() {
     it('should create an instance of Pagination', function() {
       // uncomment below and update the code to test Pagination
-      //var instance = new 42videobricks.Pagination();
-      //expect(instance).to.be.a(42videobricks.Pagination);
+      //var instance = new Api42Vb.Pagination();
+      //expect(instance).to.be.a(Api42Vb.Pagination);
     });
 
     it('should have the property offset (base name: "offset")', function() {
       // uncomment below and update the code to test the property offset
-      //var instance = new 42videobricks.Pagination();
+      //var instance = new Api42Vb.Pagination();
       //expect(instance).to.be();
     });
 
     it('should have the property limit (base name: "limit")', function() {
       // uncomment below and update the code to test the property limit
-      //var instance = new 42videobricks.Pagination();
+      //var instance = new Api42Vb.Pagination();
       //expect(instance).to.be();
     });
 
     it('should have the property total (base name: "total")', function() {
       // uncomment below and update the code to test the property total
-      //var instance = new 42videobricks.Pagination();
+      //var instance = new Api42Vb.Pagination();
       //expect(instance).to.be();
     });
 

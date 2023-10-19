@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.42videobricks);
+    factory(root.expect, root.Api42Vb);
   }
-}(this, function(expect, 42videobricks) {
+}(this, function(expect, Api42Vb) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new 42videobricks.VideoMultipartUploadFinalizePartsInner();
+    instance = new Api42Vb.VideoMultipartUploadFinalizePartsInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('VideoMultipartUploadFinalizePartsInner', function() {
     it('should create an instance of VideoMultipartUploadFinalizePartsInner', function() {
       // uncomment below and update the code to test VideoMultipartUploadFinalizePartsInner
-      //var instance = new 42videobricks.VideoMultipartUploadFinalizePartsInner();
-      //expect(instance).to.be.a(42videobricks.VideoMultipartUploadFinalizePartsInner);
+      //var instance = new Api42Vb.VideoMultipartUploadFinalizePartsInner();
+      //expect(instance).to.be.a(Api42Vb.VideoMultipartUploadFinalizePartsInner);
     });
 
     it('should have the property partNumber (base name: "PartNumber")', function() {
       // uncomment below and update the code to test the property partNumber
-      //var instance = new 42videobricks.VideoMultipartUploadFinalizePartsInner();
+      //var instance = new Api42Vb.VideoMultipartUploadFinalizePartsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property eTag (base name: "ETag")', function() {
       // uncomment below and update the code to test the property eTag
-      //var instance = new 42videobricks.VideoMultipartUploadFinalizePartsInner();
+      //var instance = new Api42Vb.VideoMultipartUploadFinalizePartsInner();
       //expect(instance).to.be();
     });
 

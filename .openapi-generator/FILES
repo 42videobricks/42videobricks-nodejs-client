@@ -8,6 +8,8 @@ docs/DataVideoUsage.md
 docs/DataVideoUsageList.md
 docs/Error.md
 docs/Pagination.md
+docs/TagList.md
+docs/TagsApi.md
 docs/Video.md
 docs/VideoAssets.md
 docs/VideoAttachment.md
@@ -30,6 +32,7 @@ mocha.opts
 package.json
 src/ApiClient.js
 src/api/DataApi.js
+src/api/TagsApi.js
 src/api/VideosApi.js
 src/api/WebhooksApi.js
 src/index.js
@@ -37,6 +40,7 @@ src/model/DataVideoUsage.js
 src/model/DataVideoUsageList.js
 src/model/Error.js
 src/model/Pagination.js
+src/model/TagList.js
 src/model/Video.js
 src/model/VideoAssets.js
 src/model/VideoAttachment.js
@@ -53,12 +57,14 @@ src/model/Webhook.js
 src/model/WebhookList.js
 src/model/WebhookProperties.js
 test/api/DataApi.spec.js
+test/api/TagsApi.spec.js
 test/api/VideosApi.spec.js
 test/api/WebhooksApi.spec.js
 test/model/DataVideoUsage.spec.js
 test/model/DataVideoUsageList.spec.js
 test/model/Error.spec.js
 test/model/Pagination.spec.js
+test/model/TagList.spec.js
 test/model/Video.spec.js
 test/model/VideoAssets.spec.js
 test/model/VideoAttachment.spec.js

@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.42videobricks);
+    factory(root.expect, root.Api42Vb);
   }
-}(this, function(expect, 42videobricks) {
+}(this, function(expect, Api42Vb) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new 42videobricks.VideoAttachment();
+    instance = new Api42Vb.VideoAttachment();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,37 +50,37 @@
   describe('VideoAttachment', function() {
     it('should create an instance of VideoAttachment', function() {
       // uncomment below and update the code to test VideoAttachment
-      //var instance = new 42videobricks.VideoAttachment();
-      //expect(instance).to.be.a(42videobricks.VideoAttachment);
+      //var instance = new Api42Vb.VideoAttachment();
+      //expect(instance).to.be.a(Api42Vb.VideoAttachment);
     });
 
     it('should have the property videoId (base name: "videoId")', function() {
       // uncomment below and update the code to test the property videoId
-      //var instance = new 42videobricks.VideoAttachment();
+      //var instance = new Api42Vb.VideoAttachment();
       //expect(instance).to.be();
     });
 
     it('should have the property attachmentType (base name: "attachmentType")', function() {
       // uncomment below and update the code to test the property attachmentType
-      //var instance = new 42videobricks.VideoAttachment();
+      //var instance = new Api42Vb.VideoAttachment();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new 42videobricks.VideoAttachment();
+      //var instance = new Api42Vb.VideoAttachment();
       //expect(instance).to.be();
     });
 
     it('should have the property url (base name: "url")', function() {
       // uncomment below and update the code to test the property url
-      //var instance = new 42videobricks.VideoAttachment();
+      //var instance = new Api42Vb.VideoAttachment();
       //expect(instance).to.be();
     });
 
     it('should have the property locale (base name: "locale")', function() {
       // uncomment below and update the code to test the property locale
-      //var instance = new 42videobricks.VideoAttachment();
+      //var instance = new Api42Vb.VideoAttachment();
       //expect(instance).to.be();
     });
 
