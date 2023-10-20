@@ -40,7 +40,7 @@ import WebhooksApi from './api/WebhooksApi';
 
 
 /**
-* 42videobricks is a Video Platform As A Service (VPaaS).<br>
+* Official Node.js client library for 42videobricks API..<br>
 * The <code>index</code> module provides access to constructors for all the classes which comprise the public API.
 * <p>
 * An AMD (recommended!) or CommonJS application will generally do something equivalent to the following:
@@ -68,7 +68,7 @@ import WebhooksApi from './api/WebhooksApi';
 * </pre>
 * </p>
 * @module index
-* @version 1.1
+* @version 1.1.1
 */
 export {
     /**

@@ -19,7 +19,7 @@ Return the list of tags created and set to videos
 ### Example
 
 ```javascript
-import Api42Vb from '42videobricks';
+import Api42Vb from '42videobricks-nodejs-client';
 let defaultClient = Api42Vb.ApiClient.instance;
 // Configure API key authorization: api_key
 let api_key = defaultClient.authentications['api_key'];

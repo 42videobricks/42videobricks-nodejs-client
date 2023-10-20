@@ -21,7 +21,7 @@ import WebhookProperties from '../model/WebhookProperties';
 /**
 * Webhooks service.
 * @module api/WebhooksApi
-* @version 1.1
+* @version 1.1.1
 */
 export default class WebhooksApi {
 

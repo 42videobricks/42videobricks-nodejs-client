@@ -18,7 +18,7 @@ import VideoProperties from './VideoProperties';
 /**
  * The Video model module.
  * @module model/Video
- * @version 1.1
+ * @version 1.1.1
  */
 class Video {
     /**

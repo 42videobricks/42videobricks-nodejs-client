@@ -1,9 +1,22 @@
 {
-  "name": "42videobricks",
-  "version": "1.1",
-  "description": "42videobricks is a Video Platform As A Service (VPaaS)",
+  "name": "42videobricks-nodejs-client",
+  "version": "1.1.1",
+  "description": "Official Node.js client library for 42videobricks API.",
   "license": "MIT",
+  "keywords": [
+    "42videobricks",
+    "video",
+    "api",
+    "client",
+    "sdk",
+    "rest"
+  ],
   "main": "dist/index.js",
+  "homepage": "https://github.com/42videobricks/42videobricks-nodejs-client#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/42videobricks/42videobricks-nodejs-client.git"
+  },
   "scripts": {
     "build": "babel src -d dist",
     "prepare": "npm run build",

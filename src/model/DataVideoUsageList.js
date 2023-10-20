@@ -18,7 +18,7 @@ import Pagination from './Pagination';
 /**
  * The DataVideoUsageList model module.
  * @module model/DataVideoUsageList
- * @version 1.1
+ * @version 1.1.1
  */
 class DataVideoUsageList {
     /**
