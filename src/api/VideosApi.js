@@ -26,7 +26,7 @@ import VideoUploadInitResponse from '../model/VideoUploadInitResponse';
 /**
 * Videos service.
 * @module api/VideosApi
-* @version 1.1
+* @version 1.1.1
 */
 export default class VideosApi {
 

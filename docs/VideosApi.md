@@ -34,7 +34,7 @@ Upload an attachement file and attached it to a video Currently: - attachement f
 ### Example
 
 ```javascript
-import Api42Vb from '42videobricks';
+import Api42Vb from '42videobricks-nodejs-client';
 let defaultClient = Api42Vb.ApiClient.instance;
 // Configure API key authorization: api_key
 let api_key = defaultClient.authentications['api_key'];
@@ -93,7 +93,7 @@ Upload an image file and set it as Thumbnail to the video
 ### Example
 
 ```javascript
-import Api42Vb from '42videobricks';
+import Api42Vb from '42videobricks-nodejs-client';
 let defaultClient = Api42Vb.ApiClient.instance;
 // Configure API key authorization: api_key
 let api_key = defaultClient.authentications['api_key'];
@@ -148,7 +148,7 @@ You can create a video object by using this endpoint.  Once the video is created
 ### Example
 
 ```javascript
-import Api42Vb from '42videobricks';
+import Api42Vb from '42videobricks-nodejs-client';
 let defaultClient = Api42Vb.ApiClient.instance;
 // Configure API key authorization: api_key
 let api_key = defaultClient.authentications['api_key'];
@@ -199,7 +199,7 @@ Delete an attachment (and the attached file)
 ### Example
 
 ```javascript
-import Api42Vb from '42videobricks';
+import Api42Vb from '42videobricks-nodejs-client';
 let defaultClient = Api42Vb.ApiClient.instance;
 // Configure API key authorization: api_key
 let api_key = defaultClient.authentications['api_key'];
@@ -252,7 +252,7 @@ Delete a thumbnail
 ### Example
 
 ```javascript
-import Api42Vb from '42videobricks';
+import Api42Vb from '42videobricks-nodejs-client';
 let defaultClient = Api42Vb.ApiClient.instance;
 // Configure API key authorization: api_key
 let api_key = defaultClient.authentications['api_key'];
@@ -301,7 +301,7 @@ Delete a video
 ### Example
 
 ```javascript
-import Api42Vb from '42videobricks';
+import Api42Vb from '42videobricks-nodejs-client';
 let defaultClient = Api42Vb.ApiClient.instance;
 // Configure API key authorization: api_key
 let api_key = defaultClient.authentications['api_key'];
@@ -352,7 +352,7 @@ Once video parts are uploaded, finalize the upload by requesting to transcode th
 ### Example
 
 ```javascript
-import Api42Vb from '42videobricks';
+import Api42Vb from '42videobricks-nodejs-client';
 let defaultClient = Api42Vb.ApiClient.instance;
 // Configure API key authorization: api_key
 let api_key = defaultClient.authentications['api_key'];
@@ -407,7 +407,7 @@ Once video file is uploaded, finalize the upload by requesting to transcode the 
 ### Example
 
 ```javascript
-import Api42Vb from '42videobricks';
+import Api42Vb from '42videobricks-nodejs-client';
 let defaultClient = Api42Vb.ApiClient.instance;
 // Configure API key authorization: api_key
 let api_key = defaultClient.authentications['api_key'];
@@ -458,7 +458,7 @@ Get a video attachement object
 ### Example
 
 ```javascript
-import Api42Vb from '42videobricks';
+import Api42Vb from '42videobricks-nodejs-client';
 let defaultClient = Api42Vb.ApiClient.instance;
 // Configure API key authorization: api_key
 let api_key = defaultClient.authentications['api_key'];
@@ -513,7 +513,7 @@ Get the attachement file Currently only text/plain files are handled.
 ### Example
 
 ```javascript
-import Api42Vb from '42videobricks';
+import Api42Vb from '42videobricks-nodejs-client';
 let defaultClient = Api42Vb.ApiClient.instance;
 // Configure API key authorization: api_key
 let api_key = defaultClient.authentications['api_key'];
@@ -568,7 +568,7 @@ Return a list of attachments to a videos
 ### Example
 
 ```javascript
-import Api42Vb from '42videobricks';
+import Api42Vb from '42videobricks-nodejs-client';
 let defaultClient = Api42Vb.ApiClient.instance;
 // Configure API key authorization: api_key
 let api_key = defaultClient.authentications['api_key'];
@@ -627,7 +627,7 @@ Retun a single video
 ### Example
 
 ```javascript
-import Api42Vb from '42videobricks';
+import Api42Vb from '42videobricks-nodejs-client';
 let defaultClient = Api42Vb.ApiClient.instance;
 // Configure API key authorization: api_key
 let api_key = defaultClient.authentications['api_key'];
@@ -682,7 +682,7 @@ Return the list of videos.  Return an empty list it there is no video to return.
 ### Example
 
 ```javascript
-import Api42Vb from '42videobricks';
+import Api42Vb from '42videobricks-nodejs-client';
 let defaultClient = Api42Vb.ApiClient.instance;
 // Configure API key authorization: api_key
 let api_key = defaultClient.authentications['api_key'];
@@ -741,7 +741,7 @@ Get signed urls to upload a big file split in multiparts Once the video is uploa
 ### Example
 
 ```javascript
-import Api42Vb from '42videobricks';
+import Api42Vb from '42videobricks-nodejs-client';
 let defaultClient = Api42Vb.ApiClient.instance;
 // Configure API key authorization: api_key
 let api_key = defaultClient.authentications['api_key'];
@@ -796,7 +796,7 @@ Get a single signed url to upload a file Once the video is uploaded, do not forg
 ### Example
 
 ```javascript
-import Api42Vb from '42videobricks';
+import Api42Vb from '42videobricks-nodejs-client';
 let defaultClient = Api42Vb.ApiClient.instance;
 // Configure API key authorization: api_key
 let api_key = defaultClient.authentications['api_key'];
@@ -847,7 +847,7 @@ Update video properties  Only properties provided are updated.
 ### Example
 
 ```javascript
-import Api42Vb from '42videobricks';
+import Api42Vb from '42videobricks-nodejs-client';
 let defaultClient = Api42Vb.ApiClient.instance;
 // Configure API key authorization: api_key
 let api_key = defaultClient.authentications['api_key'];

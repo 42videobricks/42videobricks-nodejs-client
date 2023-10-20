@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The VideoMultipartUploadInit model module.
  * @module model/VideoMultipartUploadInit
- * @version 1.1
+ * @version 1.1.1
  */
 class VideoMultipartUploadInit {
     /**

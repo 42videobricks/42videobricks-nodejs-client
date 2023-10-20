@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The VideoProperties model module.
  * @module model/VideoProperties
- * @version 1.1
+ * @version 1.1.1
  */
 class VideoProperties {
     /**

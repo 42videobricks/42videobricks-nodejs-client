@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The VideoAssets model module.
  * @module model/VideoAssets
- * @version 1.1
+ * @version 1.1.1
  */
 class VideoAssets {
     /**

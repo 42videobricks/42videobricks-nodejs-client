@@ -19,7 +19,7 @@ import TagList from '../model/TagList';
 /**
 * Tags service.
 * @module api/TagsApi
-* @version 1.1
+* @version 1.1.1
 */
 export default class TagsApi {
 
