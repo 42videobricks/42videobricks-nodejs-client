@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.42videobricks);
+    factory(root.expect, root.Api42Vb);
   }
-}(this, function(expect, 42videobricks) {
+}(this, function(expect, Api42Vb) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new 42videobricks.Video();
+    instance = new Api42Vb.Video();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,73 +50,73 @@
   describe('Video', function() {
     it('should create an instance of Video', function() {
       // uncomment below and update the code to test Video
-      //var instance = new 42videobricks.Video();
-      //expect(instance).to.be.a(42videobricks.Video);
+      //var instance = new Api42Vb.Video();
+      //expect(instance).to.be.a(Api42Vb.Video);
     });
 
     it('should have the property title (base name: "title")', function() {
       // uncomment below and update the code to test the property title
-      //var instance = new 42videobricks.Video();
+      //var instance = new Api42Vb.Video();
       //expect(instance).to.be();
     });
 
     it('should have the property description (base name: "description")', function() {
       // uncomment below and update the code to test the property description
-      //var instance = new 42videobricks.Video();
+      //var instance = new Api42Vb.Video();
       //expect(instance).to.be();
     });
 
     it('should have the property _public (base name: "public")', function() {
       // uncomment below and update the code to test the property _public
-      //var instance = new 42videobricks.Video();
+      //var instance = new Api42Vb.Video();
       //expect(instance).to.be();
     });
 
     it('should have the property tags (base name: "tags")', function() {
       // uncomment below and update the code to test the property tags
-      //var instance = new 42videobricks.Video();
+      //var instance = new Api42Vb.Video();
       //expect(instance).to.be();
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new 42videobricks.Video();
+      //var instance = new Api42Vb.Video();
       //expect(instance).to.be();
     });
 
     it('should have the property status (base name: "status")', function() {
       // uncomment below and update the code to test the property status
-      //var instance = new 42videobricks.Video();
+      //var instance = new Api42Vb.Video();
       //expect(instance).to.be();
     });
 
     it('should have the property duration (base name: "duration")', function() {
       // uncomment below and update the code to test the property duration
-      //var instance = new 42videobricks.Video();
+      //var instance = new Api42Vb.Video();
       //expect(instance).to.be();
     });
 
     it('should have the property ctime (base name: "ctime")', function() {
       // uncomment below and update the code to test the property ctime
-      //var instance = new 42videobricks.Video();
+      //var instance = new Api42Vb.Video();
       //expect(instance).to.be();
     });
 
     it('should have the property mtime (base name: "mtime")', function() {
       // uncomment below and update the code to test the property mtime
-      //var instance = new 42videobricks.Video();
+      //var instance = new Api42Vb.Video();
       //expect(instance).to.be();
     });
 
     it('should have the property assets (base name: "assets")', function() {
       // uncomment below and update the code to test the property assets
-      //var instance = new 42videobricks.Video();
+      //var instance = new Api42Vb.Video();
       //expect(instance).to.be();
     });
 
     it('should have the property metas (base name: "metas")', function() {
       // uncomment below and update the code to test the property metas
-      //var instance = new 42videobricks.Video();
+      //var instance = new Api42Vb.Video();
       //expect(instance).to.be();
     });
 

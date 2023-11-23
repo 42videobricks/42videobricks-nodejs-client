@@ -1,4 +1,4 @@
-# 42videobricks.VideoUploadInitResponse
+# Api42Vb.VideoUploadInitResponse
 
 ## Properties
 

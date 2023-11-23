@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.42videobricks);
+    factory(root.expect, root.Api42Vb);
   }
-}(this, function(expect, 42videobricks) {
+}(this, function(expect, Api42Vb) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new 42videobricks.WebhooksApi();
+    instance = new Api42Vb.WebhooksApi();
   });
 
   var getProperty = function(object, getter, property) {
@@ -48,6 +48,16 @@
   }
 
   describe('WebhooksApi', function() {
+    describe('addWebhook', function() {
+      it('should call addWebhook successfully', function(done) {
+        //uncomment below and update the code to test addWebhook
+        //instance.addWebhook(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('deleteWebhookById', function() {
       it('should call deleteWebhookById successfully', function(done) {
         //uncomment below and update the code to test deleteWebhookById
@@ -68,30 +78,20 @@
         done();
       });
     });
+    describe('getWebhooks', function() {
+      it('should call getWebhooks successfully', function(done) {
+        //uncomment below and update the code to test getWebhooks
+        //instance.getWebhooks(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('updateWebhookById', function() {
       it('should call updateWebhookById successfully', function(done) {
         //uncomment below and update the code to test updateWebhookById
         //instance.updateWebhookById(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
-    describe('webhooksGet', function() {
-      it('should call webhooksGet successfully', function(done) {
-        //uncomment below and update the code to test webhooksGet
-        //instance.webhooksGet(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
-    describe('webhooksPost', function() {
-      it('should call webhooksPost successfully', function(done) {
-        //uncomment below and update the code to test webhooksPost
-        //instance.webhooksPost(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

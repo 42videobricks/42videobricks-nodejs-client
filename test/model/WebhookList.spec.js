@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.42videobricks);
+    factory(root.expect, root.Api42Vb);
   }
-}(this, function(expect, 42videobricks) {
+}(this, function(expect, Api42Vb) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new 42videobricks.WebhookList();
+    instance = new Api42Vb.WebhookList();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('WebhookList', function() {
     it('should create an instance of WebhookList', function() {
       // uncomment below and update the code to test WebhookList
-      //var instance = new 42videobricks.WebhookList();
-      //expect(instance).to.be.a(42videobricks.WebhookList);
+      //var instance = new Api42Vb.WebhookList();
+      //expect(instance).to.be.a(Api42Vb.WebhookList);
     });
 
     it('should have the property offset (base name: "offset")', function() {
       // uncomment below and update the code to test the property offset
-      //var instance = new 42videobricks.WebhookList();
+      //var instance = new Api42Vb.WebhookList();
       //expect(instance).to.be();
     });
 
     it('should have the property limit (base name: "limit")', function() {
       // uncomment below and update the code to test the property limit
-      //var instance = new 42videobricks.WebhookList();
+      //var instance = new Api42Vb.WebhookList();
       //expect(instance).to.be();
     });
 
     it('should have the property total (base name: "total")', function() {
       // uncomment below and update the code to test the property total
-      //var instance = new 42videobricks.WebhookList();
+      //var instance = new Api42Vb.WebhookList();
       //expect(instance).to.be();
     });
 
     it('should have the property data (base name: "data")', function() {
       // uncomment below and update the code to test the property data
-      //var instance = new 42videobricks.WebhookList();
+      //var instance = new Api42Vb.WebhookList();
       //expect(instance).to.be();
     });
 

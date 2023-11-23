@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new Api42Vb.VideoMultipartUploadInitResponsePartsInner();
+    instance = new Api42Vb.TagsApi();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,25 +47,17 @@
       object[property] = value;
   }
 
-  describe('VideoMultipartUploadInitResponsePartsInner', function() {
-    it('should create an instance of VideoMultipartUploadInitResponsePartsInner', function() {
-      // uncomment below and update the code to test VideoMultipartUploadInitResponsePartsInner
-      //var instance = new Api42Vb.VideoMultipartUploadInitResponsePartsInner();
-      //expect(instance).to.be.a(Api42Vb.VideoMultipartUploadInitResponsePartsInner);
+  describe('TagsApi', function() {
+    describe('getTags', function() {
+      it('should call getTags successfully', function(done) {
+        //uncomment below and update the code to test getTags
+        //instance.getTags(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
     });
-
-    it('should have the property signedUrl (base name: "signedUrl")', function() {
-      // uncomment below and update the code to test the property signedUrl
-      //var instance = new Api42Vb.VideoMultipartUploadInitResponsePartsInner();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property partNumber (base name: "PartNumber")', function() {
-      // uncomment below and update the code to test the property partNumber
-      //var instance = new Api42Vb.VideoMultipartUploadInitResponsePartsInner();
-      //expect(instance).to.be();
-    });
-
   });
 
 }));

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The VideoUploadInitResponse model module.
  * @module model/VideoUploadInitResponse
- * @version 1.1
+ * @version 1.1.1
  */
 class VideoUploadInitResponse {
     /**

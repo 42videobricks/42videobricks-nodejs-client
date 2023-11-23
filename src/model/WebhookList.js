@@ -18,7 +18,7 @@ import Webhook from './Webhook';
 /**
  * The WebhookList model module.
  * @module model/WebhookList
- * @version 1.1
+ * @version 1.1.1
  */
 class WebhookList {
     /**

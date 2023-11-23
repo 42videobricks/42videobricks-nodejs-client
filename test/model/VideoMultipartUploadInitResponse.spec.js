@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.42videobricks);
+    factory(root.expect, root.Api42Vb);
   }
-}(this, function(expect, 42videobricks) {
+}(this, function(expect, Api42Vb) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new 42videobricks.VideoMultipartUploadInitResponse();
+    instance = new Api42Vb.VideoMultipartUploadInitResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('VideoMultipartUploadInitResponse', function() {
     it('should create an instance of VideoMultipartUploadInitResponse', function() {
       // uncomment below and update the code to test VideoMultipartUploadInitResponse
-      //var instance = new 42videobricks.VideoMultipartUploadInitResponse();
-      //expect(instance).to.be.a(42videobricks.VideoMultipartUploadInitResponse);
+      //var instance = new Api42Vb.VideoMultipartUploadInitResponse();
+      //expect(instance).to.be.a(Api42Vb.VideoMultipartUploadInitResponse);
     });
 
     it('should have the property chunkSize (base name: "chunkSize")', function() {
       // uncomment below and update the code to test the property chunkSize
-      //var instance = new 42videobricks.VideoMultipartUploadInitResponse();
+      //var instance = new Api42Vb.VideoMultipartUploadInitResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property fileId (base name: "fileId")', function() {
       // uncomment below and update the code to test the property fileId
-      //var instance = new 42videobricks.VideoMultipartUploadInitResponse();
+      //var instance = new Api42Vb.VideoMultipartUploadInitResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property fileKey (base name: "fileKey")', function() {
       // uncomment below and update the code to test the property fileKey
-      //var instance = new 42videobricks.VideoMultipartUploadInitResponse();
+      //var instance = new Api42Vb.VideoMultipartUploadInitResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property parts (base name: "parts")', function() {
       // uncomment below and update the code to test the property parts
-      //var instance = new 42videobricks.VideoMultipartUploadInitResponse();
+      //var instance = new Api42Vb.VideoMultipartUploadInitResponse();
       //expect(instance).to.be();
     });
 

@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.42videobricks);
+    factory(root.expect, root.Api42Vb);
   }
-}(this, function(expect, 42videobricks) {
+}(this, function(expect, Api42Vb) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new 42videobricks.VideoProperties();
+    instance = new Api42Vb.VideoProperties();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('VideoProperties', function() {
     it('should create an instance of VideoProperties', function() {
       // uncomment below and update the code to test VideoProperties
-      //var instance = new 42videobricks.VideoProperties();
-      //expect(instance).to.be.a(42videobricks.VideoProperties);
+      //var instance = new Api42Vb.VideoProperties();
+      //expect(instance).to.be.a(Api42Vb.VideoProperties);
     });
 
     it('should have the property title (base name: "title")', function() {
       // uncomment below and update the code to test the property title
-      //var instance = new 42videobricks.VideoProperties();
+      //var instance = new Api42Vb.VideoProperties();
       //expect(instance).to.be();
     });
 
     it('should have the property description (base name: "description")', function() {
       // uncomment below and update the code to test the property description
-      //var instance = new 42videobricks.VideoProperties();
+      //var instance = new Api42Vb.VideoProperties();
       //expect(instance).to.be();
     });
 
     it('should have the property _public (base name: "public")', function() {
       // uncomment below and update the code to test the property _public
-      //var instance = new 42videobricks.VideoProperties();
+      //var instance = new Api42Vb.VideoProperties();
       //expect(instance).to.be();
     });
 
     it('should have the property tags (base name: "tags")', function() {
       // uncomment below and update the code to test the property tags
-      //var instance = new 42videobricks.VideoProperties();
+      //var instance = new Api42Vb.VideoProperties();
       //expect(instance).to.be();
     });
 

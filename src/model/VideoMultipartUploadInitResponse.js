@@ -17,7 +17,7 @@ import VideoMultipartUploadInitResponsePartsInner from './VideoMultipartUploadIn
 /**
  * The VideoMultipartUploadInitResponse model module.
  * @module model/VideoMultipartUploadInitResponse
- * @version 1.1
+ * @version 1.1.1
  */
 class VideoMultipartUploadInitResponse {
     /**

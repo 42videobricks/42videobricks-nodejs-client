@@ -1,4 +1,4 @@
-# 42videobricks.VideoMultipartUploadInitResponsePartsInner
+# Api42Vb.VideoMultipartUploadInitResponsePartsInner
 
 ## Properties
 

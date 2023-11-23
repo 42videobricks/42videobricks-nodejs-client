@@ -1,4 +1,4 @@
-# 42videobricks.WebhookProperties
+# Api42Vb.WebhookProperties
 
 ## Properties
 

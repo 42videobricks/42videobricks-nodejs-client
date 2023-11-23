@@ -21,7 +21,7 @@ import WebhookProperties from '../model/WebhookProperties';
 /**
 * Webhooks service.
 * @module api/WebhooksApi
-* @version 1.1
+* @version 1.1.1
 */
 export default class WebhooksApi {
 
@@ -36,6 +36,48 @@ export default class WebhooksApi {
         this.apiClient = apiClient || ApiClient.instance;
     }
 
+
+    /**
+     * Callback function to receive the result of the addWebhook operation.
+     * @callback module:api/WebhooksApi~addWebhookCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/Webhook} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Add a new webhook
+     * Create a new webhook to configure notification.  Only one hook per url
+     * @param {module:model/WebhookProperties} webhookProperties 
+     * @param {module:api/WebhooksApi~addWebhookCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/Webhook}
+     */
+    addWebhook(webhookProperties, callback) {
+      let postBody = webhookProperties;
+      // verify the required parameter 'webhookProperties' is set
+      if (webhookProperties === undefined || webhookProperties === null) {
+        throw new Error("Missing the required parameter 'webhookProperties' when calling addWebhook");
+      }
+
+      let pathParams = {
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['api_key'];
+      let contentTypes = ['application/json'];
+      let accepts = ['application/json'];
+      let returnType = Webhook;
+      return this.apiClient.callApi(
+        '/webhooks', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
 
     /**
      * Callback function to receive the result of the deleteWebhookById operation.
@@ -122,6 +164,49 @@ export default class WebhooksApi {
     }
 
     /**
+     * Callback function to receive the result of the getWebhooks operation.
+     * @callback module:api/WebhooksApi~getWebhooksCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/WebhookList} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * List webhooks
+     * Return the list of webhooks.  Return an empty list it there are no webhook to return.
+     * @param {Object} opts Optional parameters
+     * @param {Number} [limit] Number of elements to return (default=10)
+     * @param {Number} [offset] offset for pagination
+     * @param {module:api/WebhooksApi~getWebhooksCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/WebhookList}
+     */
+    getWebhooks(opts, callback) {
+      opts = opts || {};
+      let postBody = null;
+
+      let pathParams = {
+      };
+      let queryParams = {
+        'limit': opts['limit'],
+        'offset': opts['offset']
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['api_key'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = WebhookList;
+      return this.apiClient.callApi(
+        '/webhooks', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
      * Callback function to receive the result of the updateWebhookById operation.
      * @callback module:api/WebhooksApi~updateWebhookByIdCallback
      * @param {String} error Error message, if any.
@@ -164,91 +249,6 @@ export default class WebhooksApi {
       let returnType = Webhook;
       return this.apiClient.callApi(
         '/webhooks/{webhookId}', 'PUT',
-        pathParams, queryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType, null, callback
-      );
-    }
-
-    /**
-     * Callback function to receive the result of the webhooksGet operation.
-     * @callback module:api/WebhooksApi~webhooksGetCallback
-     * @param {String} error Error message, if any.
-     * @param {module:model/WebhookList} data The data returned by the service call.
-     * @param {String} response The complete HTTP response.
-     */
-
-    /**
-     * List webhooks
-     * Return the list of webhooks.  Return an empty list it there are no webhook to return.
-     * @param {Object} opts Optional parameters
-     * @param {Number} [limit] Number of elements to return (default=10)
-     * @param {Number} [offset] offset for pagination
-     * @param {module:api/WebhooksApi~webhooksGetCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/WebhookList}
-     */
-    webhooksGet(opts, callback) {
-      opts = opts || {};
-      let postBody = null;
-
-      let pathParams = {
-      };
-      let queryParams = {
-        'limit': opts['limit'],
-        'offset': opts['offset']
-      };
-      let headerParams = {
-      };
-      let formParams = {
-      };
-
-      let authNames = ['api_key'];
-      let contentTypes = [];
-      let accepts = ['application/json'];
-      let returnType = WebhookList;
-      return this.apiClient.callApi(
-        '/webhooks', 'GET',
-        pathParams, queryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType, null, callback
-      );
-    }
-
-    /**
-     * Callback function to receive the result of the webhooksPost operation.
-     * @callback module:api/WebhooksApi~webhooksPostCallback
-     * @param {String} error Error message, if any.
-     * @param {module:model/Webhook} data The data returned by the service call.
-     * @param {String} response The complete HTTP response.
-     */
-
-    /**
-     * Add a new webhook
-     * Create a new webhook to configure notification.  Only one hook per url
-     * @param {module:model/WebhookProperties} webhookProperties 
-     * @param {module:api/WebhooksApi~webhooksPostCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/Webhook}
-     */
-    webhooksPost(webhookProperties, callback) {
-      let postBody = webhookProperties;
-      // verify the required parameter 'webhookProperties' is set
-      if (webhookProperties === undefined || webhookProperties === null) {
-        throw new Error("Missing the required parameter 'webhookProperties' when calling webhooksPost");
-      }
-
-      let pathParams = {
-      };
-      let queryParams = {
-      };
-      let headerParams = {
-      };
-      let formParams = {
-      };
-
-      let authNames = ['api_key'];
-      let contentTypes = ['application/json'];
-      let accepts = ['application/json'];
-      let returnType = Webhook;
-      return this.apiClient.callApi(
-        '/webhooks', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );

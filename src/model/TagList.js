@@ -12,19 +12,18 @@
  */
 
 import ApiClient from '../ApiClient';
-import DataVideoUsage from './DataVideoUsage';
 import Pagination from './Pagination';
 
 /**
- * The DataVideoUsageList model module.
- * @module model/DataVideoUsageList
+ * The TagList model module.
+ * @module model/TagList
  * @version 1.1.1
  */
-class DataVideoUsageList {
+class TagList {
     /**
-     * Constructs a new <code>DataVideoUsageList</code>.
-     * Data Video Usage Object list
-     * @alias module:model/DataVideoUsageList
+     * Constructs a new <code>TagList</code>.
+     * Tag string list
+     * @alias module:model/TagList
      * @implements module:model/Pagination
      * @param offset {Number} 
      * @param limit {Number} 
@@ -32,7 +31,7 @@ class DataVideoUsageList {
      */
     constructor(offset, limit, total) { 
         Pagination.initialize(this, offset, limit, total);
-        DataVideoUsageList.initialize(this, offset, limit, total);
+        TagList.initialize(this, offset, limit, total);
     }
 
     /**
@@ -47,15 +46,15 @@ class DataVideoUsageList {
     }
 
     /**
-     * Constructs a <code>DataVideoUsageList</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>TagList</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/DataVideoUsageList} obj Optional instance to populate.
-     * @return {module:model/DataVideoUsageList} The populated <code>DataVideoUsageList</code> instance.
+     * @param {module:model/TagList} obj Optional instance to populate.
+     * @return {module:model/TagList} The populated <code>TagList</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new DataVideoUsageList();
+            obj = obj || new TagList();
             Pagination.constructFromObject(data, obj);
 
             if (data.hasOwnProperty('offset')) {
@@ -68,33 +67,27 @@ class DataVideoUsageList {
                 obj['total'] = ApiClient.convertToType(data['total'], 'Number');
             }
             if (data.hasOwnProperty('data')) {
-                obj['data'] = ApiClient.convertToType(data['data'], [DataVideoUsage]);
+                obj['data'] = ApiClient.convertToType(data['data'], ['String']);
             }
         }
         return obj;
     }
 
     /**
-     * Validates the JSON data with respect to <code>DataVideoUsageList</code>.
+     * Validates the JSON data with respect to <code>TagList</code>.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>DataVideoUsageList</code>.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>TagList</code>.
      */
     static validateJSON(data) {
         // check to make sure all required properties are present in the JSON string
-        for (const property of DataVideoUsageList.RequiredProperties) {
+        for (const property of TagList.RequiredProperties) {
             if (!data[property]) {
                 throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
             }
         }
-        if (data['data']) { // data not null
-            // ensure the json data is an array
-            if (!Array.isArray(data['data'])) {
-                throw new Error("Expected the field `data` to be an array in the JSON data but got " + data['data']);
-            }
-            // validate the optional field `data` (array)
-            for (const item of data['data']) {
-                DataVideoUsage.validateJSON(item);
-            };
+        // ensure the json data is an array
+        if (!Array.isArray(data['data'])) {
+            throw new Error("Expected the field `data` to be an array in the JSON data but got " + data['data']);
         }
 
         return true;
@@ -103,27 +96,27 @@ class DataVideoUsageList {
 
 }
 
-DataVideoUsageList.RequiredProperties = ["offset", "limit", "total"];
+TagList.RequiredProperties = ["offset", "limit", "total"];
 
 /**
  * @member {Number} offset
  */
-DataVideoUsageList.prototype['offset'] = undefined;
+TagList.prototype['offset'] = undefined;
 
 /**
  * @member {Number} limit
  */
-DataVideoUsageList.prototype['limit'] = undefined;
+TagList.prototype['limit'] = undefined;
 
 /**
  * @member {Number} total
  */
-DataVideoUsageList.prototype['total'] = undefined;
+TagList.prototype['total'] = undefined;
 
 /**
- * @member {Array.<module:model/DataVideoUsage>} data
+ * @member {Array.<String>} data
  */
-DataVideoUsageList.prototype['data'] = undefined;
+TagList.prototype['data'] = undefined;
 
 
 // Implement Pagination interface:
@@ -143,5 +136,5 @@ Pagination.prototype['total'] = undefined;
 
 
 
-export default DataVideoUsageList;
+export default TagList;
 

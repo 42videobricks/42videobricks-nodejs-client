@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.42videobricks);
+    factory(root.expect, root.Api42Vb);
   }
-}(this, function(expect, 42videobricks) {
+}(this, function(expect, Api42Vb) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new 42videobricks.VideoUploadInitResponse();
+    instance = new Api42Vb.VideoUploadInitResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('VideoUploadInitResponse', function() {
     it('should create an instance of VideoUploadInitResponse', function() {
       // uncomment below and update the code to test VideoUploadInitResponse
-      //var instance = new 42videobricks.VideoUploadInitResponse();
-      //expect(instance).to.be.a(42videobricks.VideoUploadInitResponse);
+      //var instance = new Api42Vb.VideoUploadInitResponse();
+      //expect(instance).to.be.a(Api42Vb.VideoUploadInitResponse);
     });
 
     it('should have the property signedUrl (base name: "signedUrl")', function() {
       // uncomment below and update the code to test the property signedUrl
-      //var instance = new 42videobricks.VideoUploadInitResponse();
+      //var instance = new Api42Vb.VideoUploadInitResponse();
       //expect(instance).to.be();
     });
 

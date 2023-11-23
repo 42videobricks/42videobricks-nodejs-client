@@ -17,7 +17,7 @@ import querystring from "querystring";
 
 /**
 * @module ApiClient
-* @version 1.1
+* @version 1.1.1
 */
 
 /**
@@ -55,7 +55,7 @@ class ApiClient {
          * @default {}
          */
         this.defaultHeaders = {
-            'User-Agent': 'OpenAPI-Generator/1.1/Javascript'
+            'User-Agent': 'OpenAPI-Generator/1.1.1/Javascript'
         };
 
         /**
@@ -597,12 +597,12 @@ class ApiClient {
               'description': "Sandbox server (videos are watermarked and deleted after 24h)",
             },
             {
-              'url': "https://api-stg.42videobricks.com",
-              'description': "Staging server",
-            },
-            {
               'url': "https://api.42videobricks.com",
               'description': "Production server",
+            },
+            {
+              'url': "https://api-stg.42videobricks.com",
+              'description': "Staging server",
             }
       ];
     }

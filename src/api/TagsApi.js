@@ -13,19 +13,19 @@
 
 
 import ApiClient from "../ApiClient";
-import DataVideoUsageList from '../model/DataVideoUsageList';
 import Error from '../model/Error';
+import TagList from '../model/TagList';
 
 /**
-* Data service.
-* @module api/DataApi
+* Tags service.
+* @module api/TagsApi
 * @version 1.1.1
 */
-export default class DataApi {
+export default class TagsApi {
 
     /**
-    * Constructs a new DataApi. 
-    * @alias module:api/DataApi
+    * Constructs a new TagsApi. 
+    * @alias module:api/TagsApi
     * @class
     * @param {module:ApiClient} [apiClient] Optional API client implementation to use,
     * default to {@link module:ApiClient#instance} if unspecified.
@@ -36,23 +36,24 @@ export default class DataApi {
 
 
     /**
-     * Callback function to receive the result of the getDataVideoUsage operation.
-     * @callback module:api/DataApi~getDataVideoUsageCallback
+     * Callback function to receive the result of the getTags operation.
+     * @callback module:api/TagsApi~getTagsCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/DataVideoUsageList} data The data returned by the service call.
+     * @param {module:model/TagList} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
-     * List Video Usage KPIs
-     * Return the monthly usage of the platform ressources. For current month, usage is calculated until current time.
+     * List Video Tags
+     * Return the list of tags created and set to videos
      * @param {Object} opts Optional parameters
      * @param {Number} [limit] Number of elements to return (default=10)
      * @param {Number} [offset] offset for pagination
-     * @param {module:api/DataApi~getDataVideoUsageCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/DataVideoUsageList}
+     * @param {String} [partial] \\'partial\\' string to filter list
+     * @param {module:api/TagsApi~getTagsCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/TagList}
      */
-    getDataVideoUsage(opts, callback) {
+    getTags(opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -60,7 +61,8 @@ export default class DataApi {
       };
       let queryParams = {
         'limit': opts['limit'],
-        'offset': opts['offset']
+        'offset': opts['offset'],
+        'partial': opts['partial']
       };
       let headerParams = {
       };
@@ -70,9 +72,9 @@ export default class DataApi {
       let authNames = ['api_key'];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = DataVideoUsageList;
+      let returnType = TagList;
       return this.apiClient.callApi(
-        '/data/videos/usage', 'GET',
+        '/tags', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );

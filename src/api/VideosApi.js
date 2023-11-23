@@ -26,7 +26,7 @@ import VideoUploadInitResponse from '../model/VideoUploadInitResponse';
 /**
 * Videos service.
 * @module api/VideosApi
-* @version 1.1
+* @version 1.1.1
 */
 export default class VideosApi {
 
@@ -52,7 +52,7 @@ export default class VideosApi {
 
     /**
      * Upload an attachement
-     * Upload an attachement file and attached it to a video Currently: - attachement file type is limited to \"subtitle\" and \"cpation\" (close caption) - supported file types: SRT (text/plain), SCC (text/plain), TTML (application/ttml), VTT (text/vtt)
+     * Upload an attachement file and attached it to a video Currently: - attachement file type is limited to \"subtitle\" and \"caption\" (close caption) - supported file types: SRT (text/plain), VTT (text/vtt)
      * @param {String} videoId Id of the video
      * @param {module:model/String} attachmentType Type of attachment
      * @param {String} locale Le locale value of the attachment
@@ -628,7 +628,7 @@ export default class VideosApi {
 
     /**
      * List videos
-     * Return the list of videos.  Optionnal: Title is used to filter video: only video containing  this string ware returned.  Return an empty list it there is no video to return.
+     * Return the list of videos.  Return an empty list it there is no video to return.
      * @param {Object} opts Optional parameters
      * @param {Number} [limit] Number of elements to return (default=10)
      * @param {Number} [offset] offset for pagination

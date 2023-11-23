@@ -17,6 +17,7 @@ import DataVideoUsage from './model/DataVideoUsage';
 import DataVideoUsageList from './model/DataVideoUsageList';
 import Error from './model/Error';
 import Pagination from './model/Pagination';
+import TagList from './model/TagList';
 import Video from './model/Video';
 import VideoAssets from './model/VideoAssets';
 import VideoAttachment from './model/VideoAttachment';
@@ -33,19 +34,20 @@ import Webhook from './model/Webhook';
 import WebhookList from './model/WebhookList';
 import WebhookProperties from './model/WebhookProperties';
 import DataApi from './api/DataApi';
+import TagsApi from './api/TagsApi';
 import VideosApi from './api/VideosApi';
 import WebhooksApi from './api/WebhooksApi';
 
 
 /**
-* 42videobricks is a Video Platform As A Service (VPaaS).<br>
+* Official Node.js client library for 42videobricks API..<br>
 * The <code>index</code> module provides access to constructors for all the classes which comprise the public API.
 * <p>
 * An AMD (recommended!) or CommonJS application will generally do something equivalent to the following:
 * <pre>
-* var 42videobricks = require('index'); // See note below*.
-* var xxxSvc = new 42videobricks.XxxApi(); // Allocate the API class we're going to use.
-* var yyyModel = new 42videobricks.Yyy(); // Construct a model instance.
+* var Api42Vb = require('index'); // See note below*.
+* var xxxSvc = new Api42Vb.XxxApi(); // Allocate the API class we're going to use.
+* var yyyModel = new Api42Vb.Yyy(); // Construct a model instance.
 * yyyModel.someProperty = 'someValue';
 * ...
 * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.
@@ -57,8 +59,8 @@ import WebhooksApi from './api/WebhooksApi';
 * <p>
 * A non-AMD browser application (discouraged) might do something like this:
 * <pre>
-* var xxxSvc = new 42videobricks.XxxApi(); // Allocate the API class we're going to use.
-* var yyy = new 42videobricks.Yyy(); // Construct a model instance.
+* var xxxSvc = new Api42Vb.XxxApi(); // Allocate the API class we're going to use.
+* var yyy = new Api42Vb.Yyy(); // Construct a model instance.
 * yyyModel.someProperty = 'someValue';
 * ...
 * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.
@@ -66,7 +68,7 @@ import WebhooksApi from './api/WebhooksApi';
 * </pre>
 * </p>
 * @module index
-* @version 1.1
+* @version 1.1.1
 */
 export {
     /**
@@ -98,6 +100,12 @@ export {
      * @property {module:model/Pagination}
      */
     Pagination,
+
+    /**
+     * The TagList model constructor.
+     * @property {module:model/TagList}
+     */
+    TagList,
 
     /**
      * The Video model constructor.
@@ -194,6 +202,12 @@ export {
     * @property {module:api/DataApi}
     */
     DataApi,
+
+    /**
+    * The TagsApi service constructor.
+    * @property {module:api/TagsApi}
+    */
+    TagsApi,
 
     /**
     * The VideosApi service constructor.

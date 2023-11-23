@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The DataVideoUsage model module.
  * @module model/DataVideoUsage
- * @version 1.1
+ * @version 1.1.1
  */
 class DataVideoUsage {
     /**
