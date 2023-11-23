@@ -17,7 +17,7 @@ import WebhookProperties from './WebhookProperties';
 /**
  * The Webhook model module.
  * @module model/Webhook
- * @version 1.1.1
+ * @version 1.1.2
  */
 class Webhook {
     /**

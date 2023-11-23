@@ -17,7 +17,7 @@ import VideoMultipartUploadFinalizePartsInner from './VideoMultipartUploadFinali
 /**
  * The VideoMultipartUploadFinalize model module.
  * @module model/VideoMultipartUploadFinalize
- * @version 1.1.1
+ * @version 1.1.2
  */
 class VideoMultipartUploadFinalize {
     /**

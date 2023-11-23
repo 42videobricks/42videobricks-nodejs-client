@@ -19,7 +19,7 @@ import Error from '../model/Error';
 /**
 * Data service.
 * @module api/DataApi
-* @version 1.1.1
+* @version 1.1.2
 */
 export default class DataApi {
 

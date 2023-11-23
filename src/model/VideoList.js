@@ -18,7 +18,7 @@ import Video from './Video';
 /**
  * The VideoList model module.
  * @module model/VideoList
- * @version 1.1.1
+ * @version 1.1.2
  */
 class VideoList {
     /**

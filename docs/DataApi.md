@@ -19,7 +19,7 @@ Return the monthly usage of the platform ressources. For current month, usage is
 ### Example
 
 ```javascript
-import Api42Vb from '42videobricks-nodejs-client';
+import Api42Vb from '@42videobricks/nodejs-client';
 let defaultClient = Api42Vb.ApiClient.instance;
 // Configure API key authorization: api_key
 let api_key = defaultClient.authentications['api_key'];

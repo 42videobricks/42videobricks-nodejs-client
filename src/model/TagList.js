@@ -17,7 +17,7 @@ import Pagination from './Pagination';
 /**
  * The TagList model module.
  * @module model/TagList
- * @version 1.1.1
+ * @version 1.1.2
  */
 class TagList {
     /**

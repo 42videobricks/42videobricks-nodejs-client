@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The VideoMultipartUploadInitResponsePartsInner model module.
  * @module model/VideoMultipartUploadInitResponsePartsInner
- * @version 1.1.1
+ * @version 1.1.2
  */
 class VideoMultipartUploadInitResponsePartsInner {
     /**

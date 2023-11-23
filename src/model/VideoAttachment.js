@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The VideoAttachment model module.
  * @module model/VideoAttachment
- * @version 1.1.1
+ * @version 1.1.2
  */
 class VideoAttachment {
     /**

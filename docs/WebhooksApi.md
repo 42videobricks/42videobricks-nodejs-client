@@ -23,7 +23,7 @@ Create a new webhook to configure notification.  Only one hook per url
 ### Example
 
 ```javascript
-import Api42Vb from '42videobricks-nodejs-client';
+import Api42Vb from '@42videobricks/nodejs-client';
 let defaultClient = Api42Vb.ApiClient.instance;
 // Configure API key authorization: api_key
 let api_key = defaultClient.authentications['api_key'];
@@ -74,7 +74,7 @@ Delete a webhook.
 ### Example
 
 ```javascript
-import Api42Vb from '42videobricks-nodejs-client';
+import Api42Vb from '@42videobricks/nodejs-client';
 let defaultClient = Api42Vb.ApiClient.instance;
 // Configure API key authorization: api_key
 let api_key = defaultClient.authentications['api_key'];
@@ -123,7 +123,7 @@ Retun a single webhook
 ### Example
 
 ```javascript
-import Api42Vb from '42videobricks-nodejs-client';
+import Api42Vb from '@42videobricks/nodejs-client';
 let defaultClient = Api42Vb.ApiClient.instance;
 // Configure API key authorization: api_key
 let api_key = defaultClient.authentications['api_key'];
@@ -174,7 +174,7 @@ Return the list of webhooks.  Return an empty list it there are no webhook to re
 ### Example
 
 ```javascript
-import Api42Vb from '42videobricks-nodejs-client';
+import Api42Vb from '@42videobricks/nodejs-client';
 let defaultClient = Api42Vb.ApiClient.instance;
 // Configure API key authorization: api_key
 let api_key = defaultClient.authentications['api_key'];
@@ -229,7 +229,7 @@ Update a existing webhooks.
 ### Example
 
 ```javascript
-import Api42Vb from '42videobricks-nodejs-client';
+import Api42Vb from '@42videobricks/nodejs-client';
 let defaultClient = Api42Vb.ApiClient.instance;
 // Configure API key authorization: api_key
 let api_key = defaultClient.authentications['api_key'];
