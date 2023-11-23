@@ -13,18 +13,18 @@
 
 import ApiClient from '../ApiClient';
 import Pagination from './Pagination';
-import VideoAttachment from './VideoAttachment';
+import Playlist from './Playlist';
 
 /**
- * The VideoAttachmentList model module.
- * @module model/VideoAttachmentList
+ * The PlaylistList model module.
+ * @module model/PlaylistList
  * @version 1.2.0
  */
-class VideoAttachmentList {
+class PlaylistList {
     /**
-     * Constructs a new <code>VideoAttachmentList</code>.
-     * Video Attachment Object list
-     * @alias module:model/VideoAttachmentList
+     * Constructs a new <code>PlaylistList</code>.
+     * Playlist Object list
+     * @alias module:model/PlaylistList
      * @implements module:model/Pagination
      * @param offset {Number} 
      * @param limit {Number} 
@@ -32,7 +32,7 @@ class VideoAttachmentList {
      */
     constructor(offset, limit, total) { 
         Pagination.initialize(this, offset, limit, total);
-        VideoAttachmentList.initialize(this, offset, limit, total);
+        PlaylistList.initialize(this, offset, limit, total);
     }
 
     /**
@@ -47,15 +47,15 @@ class VideoAttachmentList {
     }
 
     /**
-     * Constructs a <code>VideoAttachmentList</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>PlaylistList</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/VideoAttachmentList} obj Optional instance to populate.
-     * @return {module:model/VideoAttachmentList} The populated <code>VideoAttachmentList</code> instance.
+     * @param {module:model/PlaylistList} obj Optional instance to populate.
+     * @return {module:model/PlaylistList} The populated <code>PlaylistList</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new VideoAttachmentList();
+            obj = obj || new PlaylistList();
             Pagination.constructFromObject(data, obj);
 
             if (data.hasOwnProperty('offset')) {
@@ -68,20 +68,20 @@ class VideoAttachmentList {
                 obj['total'] = ApiClient.convertToType(data['total'], 'Number');
             }
             if (data.hasOwnProperty('data')) {
-                obj['data'] = ApiClient.convertToType(data['data'], [VideoAttachment]);
+                obj['data'] = ApiClient.convertToType(data['data'], [Playlist]);
             }
         }
         return obj;
     }
 
     /**
-     * Validates the JSON data with respect to <code>VideoAttachmentList</code>.
+     * Validates the JSON data with respect to <code>PlaylistList</code>.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>VideoAttachmentList</code>.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>PlaylistList</code>.
      */
     static validateJSON(data) {
         // check to make sure all required properties are present in the JSON string
-        for (const property of VideoAttachmentList.RequiredProperties) {
+        for (const property of PlaylistList.RequiredProperties) {
             if (!data[property]) {
                 throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
             }
@@ -93,7 +93,7 @@ class VideoAttachmentList {
             }
             // validate the optional field `data` (array)
             for (const item of data['data']) {
-                VideoAttachment.validateJSON(item);
+                Playlist.validateJSON(item);
             };
         }
 
@@ -103,27 +103,27 @@ class VideoAttachmentList {
 
 }
 
-VideoAttachmentList.RequiredProperties = ["offset", "limit", "total"];
+PlaylistList.RequiredProperties = ["offset", "limit", "total"];
 
 /**
  * @member {Number} offset
  */
-VideoAttachmentList.prototype['offset'] = undefined;
+PlaylistList.prototype['offset'] = undefined;
 
 /**
  * @member {Number} limit
  */
-VideoAttachmentList.prototype['limit'] = undefined;
+PlaylistList.prototype['limit'] = undefined;
 
 /**
  * @member {Number} total
  */
-VideoAttachmentList.prototype['total'] = undefined;
+PlaylistList.prototype['total'] = undefined;
 
 /**
- * @member {Array.<module:model/VideoAttachment>} data
+ * @member {Array.<module:model/Playlist>} data
  */
-VideoAttachmentList.prototype['data'] = undefined;
+PlaylistList.prototype['data'] = undefined;
 
 
 // Implement Pagination interface:
@@ -143,5 +143,5 @@ Pagination.prototype['total'] = undefined;
 
 
 
-export default VideoAttachmentList;
+export default PlaylistList;
 

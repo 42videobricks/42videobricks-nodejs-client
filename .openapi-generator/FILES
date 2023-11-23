@@ -7,6 +7,10 @@ docs/DataVideoUsage.md
 docs/DataVideoUsageList.md
 docs/Error.md
 docs/Pagination.md
+docs/Playlist.md
+docs/PlaylistList.md
+docs/PlaylistProperties.md
+docs/PlaylistsApi.md
 docs/TagList.md
 docs/TagsApi.md
 docs/Video.md
@@ -20,6 +24,7 @@ docs/VideoMultipartUploadInit.md
 docs/VideoMultipartUploadInitResponse.md
 docs/VideoMultipartUploadInitResponsePartsInner.md
 docs/VideoProperties.md
+docs/VideoStatus.md
 docs/VideoUploadInitResponse.md
 docs/VideosApi.md
 docs/Webhook.md
@@ -31,6 +36,7 @@ mocha.opts
 package.json
 src/ApiClient.js
 src/api/DataApi.js
+src/api/PlaylistsApi.js
 src/api/TagsApi.js
 src/api/VideosApi.js
 src/api/WebhooksApi.js
@@ -39,6 +45,9 @@ src/model/DataVideoUsage.js
 src/model/DataVideoUsageList.js
 src/model/Error.js
 src/model/Pagination.js
+src/model/Playlist.js
+src/model/PlaylistList.js
+src/model/PlaylistProperties.js
 src/model/TagList.js
 src/model/Video.js
 src/model/VideoAssets.js
@@ -51,7 +60,13 @@ src/model/VideoMultipartUploadInit.js
 src/model/VideoMultipartUploadInitResponse.js
 src/model/VideoMultipartUploadInitResponsePartsInner.js
 src/model/VideoProperties.js
+src/model/VideoStatus.js
 src/model/VideoUploadInitResponse.js
 src/model/Webhook.js
 src/model/WebhookList.js
 src/model/WebhookProperties.js
+test/api/PlaylistsApi.spec.js
+test/model/Playlist.spec.js
+test/model/PlaylistList.spec.js
+test/model/PlaylistProperties.spec.js
+test/model/VideoStatus.spec.js

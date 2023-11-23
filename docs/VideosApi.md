@@ -16,6 +16,7 @@ Method | HTTP request | Description
 [**getAttachmentFileByVideoId**](VideosApi.md#getAttachmentFileByVideoId) | **GET** /videos/{videoId}/attachments/{attachmentType}/{locale}/file | Get attachement file
 [**getAttachmentsByVideoId**](VideosApi.md#getAttachmentsByVideoId) | **GET** /videos/{videoId}/attachments | List of attachments
 [**getVideoById**](VideosApi.md#getVideoById) | **GET** /videos/{videoId} | Retun a single video
+[**getVideoStatusById**](VideosApi.md#getVideoStatusById) | **GET** /videos/{videoId}/status | Retun the detailed status of the video
 [**getVideos**](VideosApi.md#getVideos) | **GET** /videos | List videos
 [**initMultipartUploadVideoById**](VideosApi.md#initMultipartUploadVideoById) | **POST** /videos/{videoId}/multipart-upload/init | Multipart upload intialization
 [**initUploadVideoById**](VideosApi.md#initUploadVideoById) | **GET** /videos/{videoId}/upload/init | Single file upload intialization
@@ -671,6 +672,55 @@ Name | Type | Description  | Notes
 - **Accept**: application/json
 
 
+## getVideoStatusById
+
+> VideoStatus getVideoStatusById(videoId)
+
+Retun the detailed status of the video
+
+### Example
+
+```javascript
+import Api42Vb from '@42videobricks/nodejs-client';
+let defaultClient = Api42Vb.ApiClient.instance;
+// Configure API key authorization: api_key
+let api_key = defaultClient.authentications['api_key'];
+api_key.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//api_key.apiKeyPrefix = 'Token';
+
+let apiInstance = new Api42Vb.VideosApi();
+let videoId = {{videoId}}; // String | Id of the video
+apiInstance.getVideoStatusById(videoId, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **videoId** | **String**| Id of the video | 
+
+### Return type
+
+[**VideoStatus**](VideoStatus.md)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
 ## getVideos
 
 > VideoList getVideos(opts)
@@ -695,7 +745,7 @@ let opts = {
   'limit': 56, // Number | Number of elements to return (default=10)
   'offset': 56, // Number | offset for pagination
   'search': {{search}}, // String | Keywords search in all indexed fields
-  'sort': title:desc,ctime:asc // String | Sorting results
+  'sort': ctime:asc // String | Sorting results
 };
 apiInstance.getVideos(opts, (error, data, response) => {
   if (error) {

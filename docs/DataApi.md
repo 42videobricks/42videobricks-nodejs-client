@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 List Video Usage KPIs
 
-Return the monthly usage of the platform ressources. For current month, usage is calculated until current time.
+Return the usage of the platform ressources.  By default, it returns monthly usage but unit (dayly|week|month) can be defined. For current period, usage is calculated until current time. Start and end dates can be also optionaly defined to filter results.
 
 ### Example
 
@@ -30,7 +30,10 @@ api_key.apiKey = 'YOUR API KEY';
 let apiInstance = new Api42Vb.DataApi();
 let opts = {
   'limit': 56, // Number | Number of elements to return (default=10)
-  'offset': 56 // Number | offset for pagination
+  'offset': 56, // Number | offset for pagination
+  'interval': {{interval}}, // String | Period unit (day|week|month)
+  'startDate': {{starDate}}, // String | Start date for the period
+  'endDate': {{endDate}} // String | End date for the period
 };
 apiInstance.getDataVideoUsage(opts, (error, data, response) => {
   if (error) {
@@ -48,6 +51,9 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **limit** | **Number**| Number of elements to return (default&#x3D;10) | [optional] 
  **offset** | **Number**| offset for pagination | [optional] 
+ **interval** | **String**| Period unit (day|week|month) | [optional] 
+ **startDate** | **String**| Start date for the period | [optional] 
+ **endDate** | **String**| End date for the period | [optional] 
 
 ### Return type
 
